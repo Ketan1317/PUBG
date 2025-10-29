@@ -515,103 +515,115 @@ main .head {
     align-items: center;
     justify-content: space-evenly;
 }
-footer{
+footer {
     width: 100%;
-    height: 110vh;
+    min-height: 100vh;
     background: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px 0;
+    box-sizing: border-box;
+    position: relative;
 }
-.social{
+
+/* ===== SOCIAL ICONS ===== */
+.social {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3px;
-    position: relative;
-    top: 100px;
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
 }
+
 .social i {
-    font-size: 30px; /* Adjust the icon size */
-    margin: 10px; /* Optional: space between icons */
-    transition: color 0.3s ease; /* Optional: smooth transition effect */
+    font-size: 32px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.social i.bi-whatsapp {
-    color: #25D366; /* WhatsApp's color */
-}
-.social i.bi-youtube {
-    color: #cd1010; 
-}
+/* Platform Colors */
+.social i.bi-whatsapp { color: #25D366; }
+.social i.bi-youtube { color: #CD1010; }
+.social i.bi-messenger { color: #0084FF; }
+.social i.bi-facebook { color: #1877F2; }
+.social i.bi-twitter { color: #1DA1F2; }
+.social i.bi-threads { color: #3E3E3E; }
+.social i.bi-instagram { color: #E1306C; }
+.social i.bi-tiktok { color: #000000; }
 
-.social i.bi-messenger {
-    color: #0084FF; /* Messenger's color */
-}
-
-.social i.bi-facebook {
-    color: #1877F2; /* Facebook's color */
-}
-
-.social i.bi-twitter {
-    color: #1DA1F2; /* Twitter's color */
-}
-
-.social i.bi-threads {
-    color: #3E3E3E; /* Threads' color (gray) */
-}
-
-.social i.bi-instagram {
-    color: #E1306C; /* Instagram's color */
-}
-
-.social i.bi-tiktok {
-    color: #000000; /* TikTok's color */
-}
-
+/* Hover Glow */
 .social i:hover {
-    color: #f6bf00; /* Hover color (change as needed) */
+    color: #f6bf00;
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #f6bf00;
 }
-.image{
+
+/* ===== BRAND / IMAGE SECTION ===== */
+.image {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-    position: relative;
-    top: 110px;
+    gap: 60px;
+    margin-top: 60px;
+    flex-wrap: wrap;
 }
-.image img{
-    width: 200px;
+
+.image img {
+    width: 180px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-.image img:hover{
-    transform: scale(1.05);
-    transition-duration: .5s;
+
+.image img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #f6bf00;
 }
-.ooh{
-    margin-top: 10px;
-}
-footer p{
-    color: white;
-    position: relative;
-    top: 170px;
-    left: 500px;
-    font-size: 13px
-}
-.info{
+
+/* ===== FOOTER LINKS ===== */
+.info {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    position: relative;
-    top: 150px;
+    gap: 25px;
+    margin-top: 60px;
+    flex-wrap: wrap;
 }
-.info a{
+
+.info a {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-#akhri{
-    position: relative;
-    top: 220px;
-    left: 47vw;
-    width: 100px;
+
+.info a:hover {
+    color: #f6bf00;
+    transform: scale(1.05);
+}
+
+/* ===== COPYRIGHT TEXT ===== */
+footer p {
+    margin-top: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: #aaa;
+    letter-spacing: 0.5px;
+}
+
+/* ===== FOOTER LOGO ===== */
+#akhri {
+    margin-top: 50px;
+    width: 120px;
+    display: block;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+#akhri:hover {
+    transform: scale(1.1);
+    filter: brightness(1.3);
 }
 
 
